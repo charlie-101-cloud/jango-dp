@@ -1,0 +1,108 @@
+/* Add these to your existing style.css */
+
+/* Discount Badge */
+.discount-badge {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-left: 15px;
+    animation: pulse 2s infinite;
+}
+
+.discount-text {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Original Price Strikethrough */
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.testimonial .avatar {
+    width: 80px;
+    height: 80px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.testimonial .name {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Referral CTA */
+.referral-cta {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.referral-cta h2 {
+    margin-bottom: 20px;
+}
+
+.referral-cta p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+}
+
+/* Team Member Social */
+.member-social {
+    margin-top: 15px;
+}
+
+.member-social a {
+    color: var(--primary-color);
+    margin: 0 5px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.member-social a:hover {
+    color: var(--secondary-color);
+}
